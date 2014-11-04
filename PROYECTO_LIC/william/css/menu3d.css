@@ -1,0 +1,207 @@
+body {
+margin:0;/*desaparece cualquier espacio de arriba, asi se ve la barra pegada al navegador*/
+}
+#barrah {
+width:960px;/*ancho*/
+margin:auto;/*se ajusta solo*/
+background-color:#25567B;/*color del fondo de la barra*/
+height:30px; /*altura*/
+border-radius:0px 0px 20px 20px;/*CSS3 para redondear las esquinas de la barra para diferentes navegadores*/
+-webkit-border-radius:0px 0px 20px 20px;
+-moz-border-radius:0px 0px 20px 20px;
+box-shadow:0px 0px 5px #000 inset;/*#000 es el color negro, inset: sombreado interno (hacia adentro), box shadow hace que el borde de la barra tenga una sombra negra*/
+-webkit-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*chrome y safari*/
+-moz-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*mozilla*/
+-ms-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*explorer*/
+-o-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*opera*/
+position:relative;
+z-index:2;/*esto hace que la barra le caiga encima a los cuadros panel*/
+}
+ul {
+list-style-type:none; /*le quita el circulo que trae por defecto*/
+margin:0;
+padding:0;
+text-align:center; /*centra el texto*/
+}
+#menu>li { /*selector de hijos*/
+display:inline-block;/*para que aparezca el menu horizontal*/
+padding:5px; /*relleno a cada elemento*/
+margin:0px 10px 0px 10px;/*separando elementos*/
+}
+.panel { /*son los cuadros que se deslizan hacia abajo*/
+background-color:#25567B;
+padding-top:100px; /*para que la imagen baje*/
+color:white;
+width:150px;/*ancho*/
+height:200px;/*altura*/
+border-radius:20px;/*se usan tantos border radius para cada navegador ya que no soportan ciertos elementos css3*/
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000; /*las instrucciones despues de la coma es para una sombra externa (hacia afuera), externa porque no especifico inset, asi que implemento una sombra a los dos lados*/
+-webkit-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*chrome y safari*/
+-moz-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*mozilla*/
+-ms-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*explorer*/
+-o-box-shadow:0px 0px 5px #000 inset, 0px 0px 5px #000;/*opera*/
+position:relative;/*para poder ocultar la imagen cuando de vuelta el cuadro*/
+top:-250px; /*se ocultan los cuadros para poder salir cuando pase el mouse, el top los jala hacia arriba*/
+-webkit-transition:all ease 1s; /*chrome y safari*/
+-o-transition:all ease 1s; /*opera*/
+-moz-transition:all ease 1s; /*mozilla*/
+-ms-transition:all ease 1s; /*explorer*/
+transition:all ease 1s; /*tiempo o lapso en el que dara vuelta el cuadro o velocidad vaya*/
+-webkit-transform-style: preserve-3d; 
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style:preserve-3d; /*hace que los li se van en 3d o separados*/
+}
+.panel:hover{ /*cuando el mouse pasa encima*/
+animation:arrastra ease 2s forwards; /*arrastra es la animacion que use o el nombre que le di a lo que hara cuando pase el mouse*/
+-webkit-animation:arrastra ease 2s forwards;/*ease 2s forwards; el lapso en el que se dara es en 2 seg*/
+-ms-animation:arrastra ease 2s forwards;
+-moz-animation:arrastra ease 2s forwards;
+-o-animation:arrastra ease 2s forwards;
+}
+.frente {
+backface-visibility:hidden;/*permite esconder la imagen y el nombre principal del cuadro cuando da vuelta*/
+-webkit-backface-visibility:hidden;/* Chrome, Safari, Opera */
+}
+.frente>img { /*selector de hijos para la imagen*/
+margin-bottom:50px;/*para bajar el texto y que no este pegada la imagen a este*/
+}
+.atras {
+position:absolute;/*para que se sobreponga a la parte de enfrente*/
+top:20px;
+transform:rotateY(180deg) translateZ(100px); /*el cuadro rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(180deg) translateZ(100px);
+-moz-transform:rotateY(180deg) translateZ(100px);
+-o-transform:rotateY(180deg) translateZ(100px);
+backface-visibility:hidden;/*permite esconder la imagen y el nombre principal del cuadro cuando da vuelta*/
+-webkit-backface-visibility:hidden;/* Chrome, Safari, Opera */
+}
+.atras>ul>li{/*selector de hijos para la li de la parte de atras*/
+background-color:#66A3D2;
+width:140px; /*ancho de cada linea dentro del panel*/
+margin-top:30px; /*para que se separen las lineas de li entre si*/
+padding:5px;/*relleno, se hace 5 pixeles mas ancho en todos los lados*/
+box-shadow: 0px 0px 3px #000 inset;
+-webkit-box-shadow:0px 0px 3px #000 inset;
+-moz-box-shadow:0px 0px 3px #000 inset;
+-ms-box-shadow:0px 0px 3px #000 inset;
+-o-box-shadow:0px 0px 3px #000 inset;
+-webkit-transition:all ease 0.5s; /*chrome y safari*/
+-o-transition:all ease 0.5s; /*opera*/
+-moz-transition:all ease 0.5s; /*mozilla*/
+-ms-transition:all ease 0.5s; /*explorer*/
+transition:all ease 0.3s; /*hace que cada li se acerque, el tiempo hace que lo haga lento*/
+}
+.atras>ul>li:hover{
+transform:scale(1.2);/*el boton de li aumenta su tamaño un 1.2 pixel cuando el mouse pase sobre el*/
+-webkit-transform:scale(1.2);
+-o-transform:scale(1.2);
+-moz-transform:scale(1.2);
+box-shadow: 0px 5px 0px #3F92D2, 0px 10px 10px #000, 0px 0px 3px #000 inset; /*el color es mas oscuro para que parezca cubo (un efecto 3d), es la barra de abajo de los li, el mas oscurito, parece cubo el li; despues de la coma es un sombreado negro debajo del color o la barra y esto hace que se mire como levantado, añane un efecto mejor de visualizacion*/
+-webkit-box-shadow:0px 5px 0px #3F92D2, 0px 10px 10px #000, 0px 0px 3px #000 inset;
+-moz-box-shadow:0px 5px 0px #3F92D2, 0px 10px 10px #000, 0px 0px 3px #000 inset;
+-ms-box-shadow:0px 5px 0px #3F92D2, 0px 10px 10px #000, 0px 0px 3px #000 inset;
+-o-box-shadow:0px 5px 0px #3F92D2, 0px 10px 10px #000, 0px 0px 3px #000 inset;
+border-radius:3px;/*esto hace que la parte de abajo del li se redondee y da un buen efecto de finalizacion en 3d*/
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+}
+.atras>ul>li:active	{
+transform:scale(1.2) translateY(3px);/*cuando se pulsa el boton, la opcion o el li (como sea) se desplaza hacia abajo*/
+-webkit-transform:scale(1.2) translateY(3px);
+-o-transform:scale(1.2) translateY(3px);
+-moz-transform:scale(1.2) translateY(3px);
+box-shadow: 0px 3px 0px #3F92D2, 0px 5px 5px #000, 0px 0px 3px #000 inset; /*esto hace que cuando alguien le de clic se vea como que se pulsa el boton, baja la sombra*/
+-webkit-box-shadow:0px 3px 0px #3F92D2, 0px 5px 5px #000, 0px 0px 3px #000 inset;
+-moz-box-shadow:0px 3px 0px #3F92D2, 0px 5px 5px #000, 0px 0px 3px #000 inset;
+-ms-box-shadow:0px 3px 0px #3F92D2, 0px 5px 5px #000, 0px 0px 3px #000 inset;
+-o-box-shadow:0px 3px 0px #3F92D2, 0px 5px 5px #000, 0px 0px 3px #000 inset;
+border-radius:3px;/*esto hace que la parte de abajo del li cuando le dan clic mantenga el mismo redondeado*/
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+}
+/*desde aqui comienza lo divertido...*/
+/*en vez de "arrastra" decia NAME-YOUR-ANIMATION, el nombre de la animacion y cada color celeste de la animacion es para cada navegador*/
+@-webkit-keyframes arrastra {
+  0%   {  
+top:-250px; 
+}
+  50% { 
+top:-20px; 
+transform:rotateY(0deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(0deg);
+-moz-transform:rotateY(0deg);
+-o-transform:rotateY(0deg);
+ }
+  100%{ 
+top:-20px;
+transform:rotateY(180deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
+}
+@-moz-keyframes arrastra {
+  0%   {  
+top:-250px; 
+}
+  50% { 
+top:-20px; 
+transform:rotateY(0deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(0deg);
+-moz-transform:rotateY(0deg);
+-o-transform:rotateY(0deg);
+ }
+  100%{ 
+top:-20px;
+transform:rotateY(180deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
+}
+@-o-keyframes arrastra {
+  0%   {  
+top:-250px; 
+}
+  50% { 
+top:-20px; 
+transform:rotateY(0deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(0deg);
+-moz-transform:rotateY(0deg);
+-o-transform:rotateY(0deg);
+ }
+  100%{ 
+top:-20px;
+transform:rotateY(180deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
+}
+@keyframes arrastra {
+   0%   {  
+top:-250px; 
+}
+  50% { 
+top:-20px; 
+transform:rotateY(0deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(0deg);
+-moz-transform:rotateY(0deg);
+-o-transform:rotateY(0deg);
+ }
+  100%{ 
+top:-20px;
+transform:rotateY(180deg); /*rota en el eje Y 180 grados*/
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
+}
+
+/*NOTAS ADICIONALES DEL CODIGO HTML, NO EL CSS DE ARRIBA:
+-el atributo alt de la imagen del menu es para indicar solo es para cierta cosa, asi no se copia en otro lado de la pagina
+

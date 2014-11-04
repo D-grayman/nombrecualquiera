@@ -1,0 +1,92 @@
+.body{
+    background-image: url('../imagen/fondo2.jpg');
+    text-align: center;
+}
+
+#introduccion{
+    -moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 4px #000000;
+-webkit-box-shadow: 0px 0px 4px #000000;
+box-shadow: 0px 0px 4px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+opacity: 0.6s;
+/*-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 26);*/
+/*-ms-filter must come before filter*/
+filter: alpha(opacity = 26);
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*All filters must be placed together*/
+
+margin-left: 150px;
+margin-right: 150px;
+color: #000000;
+text-align: justify;
+padding-left:30px;
+padding-right:30px;
+background-color: #ccf587;
+
+    
+
+}
+
+#lateral1{
+    -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 4px #000000;
+-webkit-box-shadow: 0px 0px 4px #000000;
+box-shadow: 0px 0px 4px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+opacity: 0.6s;
+/*-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 26);*/
+/*-ms-filter must come before filter*/
+filter: alpha(opacity = 26);
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*All filters must be placed together*/
+
+margin-left: 150px;
+margin-right: 970px;
+color: #000000;
+text-align: justify;
+padding-left:20px;
+padding-right:20px;
+background-color: #f5adad;
+
+}
+
+#lateral2{
+    -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+-moz-box-shadow: 0px 0px 4px #000000;
+-webkit-box-shadow: 0px 0px 4px #000000;
+box-shadow: 0px 0px 4px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+opacity: 0.6s;
+/*-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 26);*/
+/*-ms-filter must come before filter*/
+filter: alpha(opacity = 26);
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*All filters must be placed together*/
+
+margin-left: 970px;
+margin-right: 150px;
+color: #000000;
+text-align: justify;
+margin-top: -800px;
+padding-left:20px;
+padding-right:20px;
+background-color: #f3e8aa;
+
+}
+
+#tituloindependencia{
+    text-align: center;
+    font-family: 'Agency FB';
+    color: #a17f7f;
+    font-size: xx-large;
+}

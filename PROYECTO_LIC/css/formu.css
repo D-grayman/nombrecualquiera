@@ -1,0 +1,171 @@
+body {
+background-image: url(../imagen/formulario.jpg);
+background-attachment: fixed; 
+background-repeat: no-repeat;
+}
+
+h3 {
+    text-align: center;
+}
+
+section {
+color: #548; 
+margin: 10px 400px;
+margin-top: -2%;
+border-radius: 15px;
+padding: 12px 12px 12px 12px;
+background: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#000));}
+
+ol.vec {margin: auto;list-style: none;}
+
+.formu label { 
+    color: #265;
+    display: inline-block; 
+    float: left; 
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 3px;
+    width: 150px;
+}
+
+.formu input { 
+	height:20px; 
+	width:220px; 
+	padding:5px 8px;
+}
+
+.formu textarea {
+	padding:8px; 
+	width:300px;
+}
+.formu button {
+	margin-left:90px;
+}
+
+li.formu input, li.formu textarea { 
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:2px;
+	color: #888;
+	font-size: 12px;
+	padding-right:30px;
+	-moz-transition: padding .25s; 
+	-webkit-transition: padding .25s; 
+	-o-transition: padding .25s;
+	transition: padding .25s;
+}
+a:link {
+color:yellow;
+}
+a:hover {
+color:green;
+}
+a:visited {
+color:yellow;
+}
+li.formu input:required:valid, li.formu textarea:required:valid { 
+	box-shadow: 0 0 10px green;
+	border-color: green;
+}
+li.formu input:focus:invalid, li.formu textarea:focus:invalid { 
+	box-shadow: 0 0 10px red;
+	border-color: red;
+}
+
+input, textarea { 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    }
+
+
+input, textarea { 
+    background: -webkit-gradient(linear, left top, left 25, from(#000000), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #000000, #FFFFFF 25px); 
+    }
+
+input, textarea { 
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #000000), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #FFFFFF, #000000 1px, #FFFFFF 25px); 
+    }
+
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+    }
+
+li.submit input { 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    }
+
+input, textarea { 
+    background: #FFFFFF url('bg_form.png') left top repeat-x; 
+    }
+
+input, textarea { 
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width: 200px; 
+    background: #FFFFFF url('bg_form.png') left top repeat-x; 
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    } 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%; 
+    } 
+
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+    }
+
+li.form label { 
+    margin: auto; 
+    color: #999999; 
+    } 
+
+li.submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background: #617798; 
+    border: 0; 
+    font-size: 14px; 
+    color: #FFFFFF; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    }
+
+button.submit { 
+margin-left:230px;
+    padding: 9px 17px;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: bold;
+   line-height: 1;
+   color: white;
+   border: none;
+   background-color: #04B404;
+   border: 1px solid #f1f1f1;
+   border-radius: 5px;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+button.submit:hover { 
+	opacity:.55;
+	cursor: pointer; 
+}
+button.submit:active { 
+	border: 1px solid #222;
+	box-shadow: 0 0 10px 5px #444 inset; 
+}

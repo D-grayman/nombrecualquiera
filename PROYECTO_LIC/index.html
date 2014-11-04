@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>El Salvador - Inicio</title>
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="css/menu.css" rel="stylesheet" type="text/css" />
+        
+       <script type="text/javascript">
+     function departamento(texto) {
+       document.getElementById("descripcion").innerHTML=texto;
+     }
+   </script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    </head>
+    <body>
+    <div class="container">
+            <ul id="nav">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a class="hsubs" href="#">HISTORIA</a>
+                    <ul class="subs">
+                    <div id="pequeopcion">
+                        <li><a href="independencias.html">Independencia</a></li>
+                        <li><a href="presidentes.html">Presidentes</a></li>
+                  <li><a href="http://www.udb.edu.sv/ciees/descargasciees/recursos/conferencia-2-situacion-economica-politica-y-social-en-la-actualidad-de-el-salvador.pdf" target="_blank" >Actualidad <img alt="descarga" src="imagen/descarga.png"></a></li>
+                    </div>
+                    </ul>
+                </li>
+                <li><a class="hsubs" href="#">EL SALVADOR</a>
+                    <ul class="subs">
+                        <div id="pequeopcion">
+                        <li><a href="zonacentral.html">Zona Central</a></li>
+                        <li><a href="zonaoccidental.html">Zona Occidental</a></li>
+                        <li><a href="zonaoriental.html">Zona Oriental</a></li>
+                    </div>
+                    </ul>
+                </li>
+                <li><a class="hsubs" href="#">TURISMO</a>
+                    <ul class="subs">
+                        <div id="pequeopcion">
+                        <li><a href="playas.html">Playas</a></li>
+                        <li><a href="pueblosvivos.html">Pueblos vivos</a></li>
+                    </div>
+                    </ul>
+                </li>
+                <li><a class="hsubs" href="#">RECURSOS NATURALES</a>
+                <ul class="subs">
+                    <div id="pequeopcion">
+                        <li><a href="reservas.html">Reservas forestales</a></li>
+                        <li><a href="animales.html">Animales en peligro</a></li>
+                    </div>
+                  </ul>
+                </li>
+
+                <li><a href="#">AYUDA</a>
+                     <ul class="subs">
+                        <div id="pequeopcion">
+                        <li><a href="acercade.html">Acerca de</a></li>
+                        <li><a href="creadores.html">Creadores</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        </div>
+                    </ul>
+                </li>
+              <div id="lavalamp"></div>
+            </ul>
+        </div>
+
+        <div id="animated-example" class="animated fadeInDown">
+        <div class="ImagenMapa"><img src="imagen/ES1.png" alt="MapaES" usemap="#Mapa"></div>
+        <map name="Mapa">
+            <!--Zona de asignacion de mapeo, divs que contienen los nombres del los popups que se utilizarán-->
+            <div id="pop1"><!--Pop1-SANTA ANA-->
+            <area shape="poly" coords="184,49,183,41,188,38,189,34,185,32,185,25,189,21,197,21,199,25,205,25,208,20,218,16,226,16,231,16,244,13,243,8,247,10,254,16,261,17,269,24,272,28,276,37,280,40,289,47,288,59,285,68,274,74,271,77,271,84,269,93,260,99,252,102,246,108,241,112,241,116,240,126,234,131,233,138,236,142,244,143,248,145,245,149,244,155,244,160,244,164,240,172,243,170,232,176,225,187,226,197,226,209,223,216,219,224,204,216,196,213,190,209,184,210,180,216,174,210,165,203,159,194,153,187,144,187,138,183,141,173,144,167,146,159,146,153,142,150,137,143,134,133,134,125,140,115,148,103,155,96,165,91,174,89,183,88,191,84,199,81,204,77,199,68,196,61,193,51,189,50" onClick="departamento('Santa Ana es un departamento de la Zona Occidental de El Salvador con clima agradable, y muy atractiva para los turistas extrangeros. Posee 13 municipios, la cabecera departemental es La Ciudad de Santa Ana. Fundada en el año de 1855 por Jose María San Martin.')"/>     </div>
+
+            <div id="pop2"><!--Pop1-AHUACHAPAN-->
+            <area shape="poly" coords="119,189,122,195,121,211,118,222,116,236,107,248,102,256,92,256,85,248,79,245,73,254,60,257,44,250,23,243,15,239,12,235,15,231,12,224,13,212,16,202,22,199,30,191,38,184,42,174,49,165,59,161,69,152,76,149,83,142,87,139,98,136,107,133,114,136,118,137,127,139,135,140,138,146,147,150,145,164,138,172,138,184,118,186" onClick="departamento('<b>Ahuachapan</b>, departamento del occidnte del país centroamericano de El Salvador, con una extension territorial de 1.239,60 Kilometros cuadrados, y con una poblacion de 319,509 habitantes. Ahuachapan es altamente comercial, gracias al cultivo de café y al cultivo de algodón. Tiene 12 municipios entre los cuales de destaca Concepción de Ataco, por los ingresos que recibe gracias al turismo y las producciones agricolas que ahi funcionan.')"/></div>
+            <div id="pop3"><!--Pop1-SONSONATE-->
+            <area shape="poly" coords="201,255,206,251,212,244,218,240,224,237,218,225,204,217,188,208,184,213,176,209,163,201,158,194,151,187,136,188,124,188,118,192,123,201,121,210,120,221,118,232,112,239,109,247,104,253,96,257,78,250,74,253,69,257,65,258,70,261,75,264,80,267,92,276,107,285,106,293,107,295,111,303,123,303,130,304,135,305,143,305,157,305,161,305,163,305,173,309,179,300,190,290,192,277,201,265,206,248,214,244,215,238,218,235,227,229" onClick="departamento('Sonsonate es un departamento de la Zona Occidental de El Salvador. Cuenta con una extensión territorial de 1,225.77 kilometros cuadrados, y con una población de 438,960 habitantes, alberga el puerto maritimo por excelencia como lo es el Puerto de Acajutla, tambien hermosos pueblos como Juayua, Nahuzalco, entre otros dando una division territorial de 16 municipios.')" /></div>
+            <div id="pop4"><!--Pop1-CHALATENANGO-->
+            <area shape="poly" coords="275,24,266,20,269,14,282,18,290,26,302,26,305,33,324,33,331,30,341,25,345,34,347,39,351,46,358,46,361,49,365,54,365,64,372,70,376,76,381,83,388,88,397,89,408,93,413,99,419,99,421,108,435,116,441,116,426,118,445,118,459,118,459,127,464,134,468,142,472,145,469,151,460,156,448,158,438,162,429,163,424,166,417,169,407,173,395,169,393,172,389,171,381,172,377,171,372,170,366,160,365,150,360,141,344,138,334,132,322,135,316,137,308,137,304,141,292,137,284,138,274,137,271,133,264,134,255,140,252,146,248,141,241,141,238,140,236,133,242,122,242,113,244,109,252,103,258,100,268,94,270,89,274,77,276,70,285,67,288,59,289,45,280,41,272,24" onClick="departamento('Chalatenango es el departamento con mayor extension de El Salvador, siendo también el mejor en la materia del ganado y la agricultura. Limita al norte con Honduras, al sur con San Salvador, La Libertad y Cuscatlan, al lado izquierdo con Santa Ana y al derecho con Cabañas. Con una extension territorial de  2,017 Kilometros Cuadrados y con 33 Municipios de los cuales se destaca la Cabecera Chalatenango, San Francisco Lempa, Concepcion Quezaltepeque y La Palma siendo este último, el que tiene mayor elevacion sobre el nivel mar, con ello atrae el turismo de locales y estrangeros')" /></div>
+
+            <div id="pop5"><!--Pop1-LA LIBERTAD-->
+            <area shape="poly" coords="246,166,246,159,252,143,259,136,270,132,274,132,282,137,282,144,283,149,285,155,288,166,292,171,301,173,295,182,295,194,294,202,289,208,287,217,286,230,282,239,285,245,290,253,297,256,299,267,297,280,297,300,300,313,304,319,306,323,311,319,319,318,321,326,319,328,321,335,315,337,298,332,286,324,279,319,269,324,264,322,252,320,244,312,241,317,235,315,222,317,203,314,190,312,180,312,175,306,178,299,185,293,193,286,193,282,199,272,204,255,210,249,213,245,214,239,224,237,227,230,224,228,222,223,222,219,226,215,227,208,227,193,227,185,230,179,240,174,247,168,246,153,247,146" onClick="departamento('La Libertad un departamento de la Zona Central de El Salvador, Con 121,908 habitantes y una extension de 112 kilometros al cuadrado, 22 municipios, entre los cuales podemos destacar Santa Tecla, Puerto de La Libertad, Antiguo Cuscatlán y Nuevo Cuscatlán. Departamento donde el desarrollo se hace notar con medida el comercio y las grandes empresas vayan creciendo.')" /></div>
+
+            <div id="pop6"><!--Pop1-SAN SALVADOR-->
+            <area shape="poly" coords="325,132,318,136,302,136,293,135,287,142,282,146,284,157,289,161,292,166,297,170,301,175,298,179,298,190,292,205,292,214,285,225,283,231,284,244,291,251,297,256,298,264,297,268,299,277,298,288,298,299,301,314,307,319,313,316,323,315,327,305,327,297,326,291,323,288,319,278,327,278,336,279,342,270,342,261,346,252,352,249,359,249,356,243,350,228,350,221,346,221,336,210,334,207,326,204,324,196,330,192,325,180,317,167,319,160,322,153,325,144" onClick="departamento('La Capital de El Salvador, departamento con mayor número de habitantes en el país, Mayor nivel de crecimiento y desarrollo urbano. Con una extensión de 886,15 Kilometros cuadrados, y 2,557,761 habitantes. Con 19 municipios, en los cuales podemos destacar: San Salvador, Soyapango, Apopa y Panchimalco. ')" /></div>
+
+
+            <div id="pop7"><!--Pop1-CUSCATLAN-->
+            <area shape="poly" coords="354,138,336,134,329,135,326,142,325,150,325,158,322,172,327,182,331,187,331,190,325,194,326,202,332,203,336,205,340,215,348,220,353,222,360,234,358,243,361,252,367,256,378,261,383,266,388,269,400,264,405,257,413,254,415,249,416,238,417,229,409,226,400,222,397,215,398,213,390,210,382,201,379,195,378,189,378,185,382,183,388,180,389,174,380,170,372,170,368,165,366,154,359,145" onClick="departamento('Cuscatlan es el departamento más pequeño de El Salvador, Con una extension territorial de 759 kilometros cuadrados, 216,446 habitantes, y 16 municipios. Lo que más se produce es Caña de Azucar, Tabaco y Piroctenia artesanal. El municipio simbolo es Suchitoto, Atrayendo más que todo, a los turistas, gracias a que el pueblo es un atractivo cultural.')" /></div>
+
+
+            <div id="pop8"><!--Pop1-LA PAZ-->
+            <area shape="poly" coords="397,262,390,270,373,263,368,254,362,254,358,253,348,251,344,255,344,263,346,270,342,274,336,282,327,281,323,287,326,291,330,299,326,309,323,312,323,319,325,325,323,330,323,338,330,344,336,349,342,350,345,355,356,360,360,361,367,366,379,368,386,372,395,380,401,381,404,382,411,380,411,385,416,386,422,392,426,383,437,375,436,365,441,362,443,351,438,341,432,340,428,328,430,316,431,309,431,305,429,296,416,285,414,285,407,279,403,263" onClick="departamento('La Paz, es un departamento costero, Con mayor numero de playas, gracias a su extension territorial, que es de: 1223,61 kilometros cuadrados. y esta dividido en 22 Municipios. Los municipios a destacar son, Zacatecoluca, El Rosario y Olocuilta. Este ultimo, por ser El Paraiso de Las Pupusas de Arroz.')"/></div>
+
+            <div id="pop9"><!--Pop1-SAN VICENTE-->
+            <area shape="poly" coords="457,219,445,222,435,223,428,231,417,231,416,239,414,248,414,256,404,262,404,272,408,282,412,282,419,285,423,288,427,293,432,313,429,322,431,327,434,332,434,341,437,343,440,347,440,352,440,357,440,360,437,366,436,371,432,379,428,383,425,389,425,395,432,398,435,398,435,389,443,384,451,379,455,374,459,371,458,361,457,359,463,347,467,339,469,332,472,327,474,322,475,315,476,313,479,305,479,303,480,301,483,300,485,298,489,292,495,287,497,287,501,287,510,286,510,282,511,274,517,269,521,265,531,259,533,254,533,248,526,246,524,244,524,239,510,236,502,236,501,233,492,229,485,224,473,221" onClick="departamento('San Vicente es perteneciente a la región paracentral de El Salvador. Con una extension de 1184 kilometros por metro cuadrado, 13 municipios y 230,205 habitantes. Como atractivos turisticos esta Amapulapa, El volcán de San Vicente y los Infiernillos.')" /></div>
+
+            <div id="pop10"><!--Pop10-CABAÑAS-->
+            <area shape="poly" coords="514,159,519,163,527,159,531,162,533,170,532,178,530,184,533,188,537,192,538,199,536,205,534,213,531,219,528,225,523,231,522,237,519,240,510,239,502,233,499,229,486,225,477,220,466,221,460,221,453,221,433,225,427,229,416,226,411,224,397,220,399,214,397,211,390,207,387,201,380,196,378,185,385,177,395,170,401,170,404,172,407,172,415,169,421,164,428,167,437,163,442,162,447,160,452,156,459,154,462,154,466,154,470,152,480,148,485,147,489,147,494,150,506,155,509,159" onClick="departamento('Cabañas es un departamento de la zona central de El Salvador, muy conocido por sus reservas naturales y a la explotacion de ganado. Con una extensión territorial de 1 103,51 Kilometros cuadrados, 9 municipios entre ellos Sensuntepeque que es la cabecera y 149 326 Habitantes. ')" /></div>
+
+            <div id="pop11"><!--Pop11-USULUTÁN-->
+            <area shape="poly" coords= "535,252,545,257,554,256,557,264,566,265,571,263,572,270,572,276,571,282,570,293,570,297,570,307,570,312,576,319,569,323,569,328,568,334,568,342,570,342,570,351,570,358,573,364,576,365,580,368,584,369,592,369,596,369,601,375,594,383,594,386,591,396,593,396,605,397,601,393,601,385,607,382,609,382,616,382,621,385,621,394,622,401,631,406,642,406,645,414,646,419,650,425,639,428,625,428,618,428,604,426,593,426,587,425,581,424,585,419,584,414,579,414,571,414,572,417,569,420,569,424,556,427,551,423,551,419,553,414,553,410,539,396,534,402,538,409,535,408,521,406,515,393,502,391,494,387,490,386,489,390,487,392,474,393,464,393,467,398,471,398,479,400,484,400,491,398,499,397,507,399,509,403,511,411,518,411,531,414,540,423,520,421,507,413,495,412,477,410,464,409,456,407,447,402,443,402,440,401,435,396,436,391,447,386,451,380,457,375,460,371,457,363,459,352,463,345,472,335,476,323,476,303,484,300,488,295,491,288,499,288,511,287,510,280,514,277,518,270,526,265,532,260" onClick="departamento('Usulutàn, es un departamento de la Zona Oriental de El Salvador, Con una extensión Territorial de 2,130 Kilometros cuadrados, 464,883 habitantes y está dividido en 23 Municipios. Como municipios emblema podemos mencionar a Berlin, Alegria, y La Cabacera, Usulutan.') "/></div>
+
+
+            <div id="pop12"><!--Pop12-SAN MIGUEL-->
+            <area shape="poly" coords= "552,257,534,255,530,250,531,246,528,246,524,243,524,237,524,234,527,225,529,221,529,214,533,210,534,207,538,200,541,200,546,200,548,200,551,203,554,202,555,197,558,193,564,193,572,194,572,197,579,197,579,192,586,191,594,191,595,187,600,184,605,182,610,182,615,205,604,213,611,225,614,232,622,234,621,240,610,245,609,259,616,264,618,272,620,272,628,279,633,281,634,278,639,280,642,280,647,283,650,289,650,295,658,295,683,298,685,301,686,315,680,321,680,328,680,334,680,346,683,348,681,358,676,364,685,368,682,377,680,381,678,388,678,393,676,399,672,406,669,410,664,421,661,422,658,424,650,421,645,415,634,409,629,407,622,405,622,386,620,383,614,380,605,378,602,386,602,388,602,393,602,398,596,399,593,395,589,390,591,383,595,380,596,378,597,371,590,369,582,369,579,365,572,363,572,360,571,355,571,349,571,343,570,338,568,340,568,331,570,322,570,319,575,317,572,311,570,299,569,294,569,286,572,282,572,276,571,272,572,258,562,265,566,262" onClick="departamento('San Miguel, el departamento más caliente de El Salvador por sus temperaturas récord de 40°C y el mas extenso, ya que limita al norte con Honduras, y al sur con el Oceano Pacifico. Con una poblacion de 480.000 habitantes, una extension de 2,077 kilometros cuadrados.')" /></div>
+
+            <div id="pop13"><!--Pop13-MORAZAN-->
+            <area shape="poly" coords= "619,231,607,211,615,204,616,198,614,187,612,181,612,178,614,174,621,171,627,170,625,164,621,157,632,155,641,159,645,164,647,164,652,160,662,158,668,158,671,169,677,176,680,178,690,191,689,199,692,198,700,195,705,189,707,189,709,189,715,193,715,201,714,209,712,214,714,217,713,231,702,239,709,243,712,249,707,258,706,269,700,278,696,281,694,288,692,293,685,295,678,297,667,297,659,298,649,294,650,287,649,282,644,279,642,284,634,278,633,281,627,277,618,267,616,266,610,258,608,249,611,246,620,243,620,235,616,230,613,227" onClick="departamento('Morazán es el departamento de la Zona Oriental de El Salvador, con una division territorial de 1 447 Kilometros cuadrados, 181,225 Habitantes y 26 Municipios. Su cabecera es San Francisco gotera. Su principal fuente de ingresos son el turismo y La siembra de Café.')" /></div>
+
+
+            <div id="pop14"><!--Pop14-LA UNION-->
+            <area shape="poly" coords= "690,297,700,277,704,270,711,261,710,249,707,239,699,242,712,228,716,213,716,208,717,203,711,192,720,190,732,188,742,184,750,185,760,185,763,191,768,195,777,205,777,211,781,216,785,222,785,228,782,235,779,246,775,260,773,268,771,277,770,280,770,288,765,294,764,298,761,302,761,314,763,317,768,317,773,316,774,318,780,324,780,329,776,338,771,338,764,341,762,342,752,347,750,346,746,341,742,341,735,346,734,356,734,361,734,367,741,371,748,375,753,378,756,382,759,383,766,381,769,380,770,385,767,385,759,390,758,393,754,394,755,400,766,401,769,404,775,407,777,410,782,413,789,423,789,425,779,422,774,418,767,410,765,411,758,409,752,405,748,404,740,408,736,413,725,413,716,417,715,421,719,422,723,429,706,429,691,428,681,427,665,425,664,416,671,408,672,401,676,400,679,390,679,383,684,377,684,369,682,360,684,352,685,349,684,340,680,331,680,322,686,307,686,298" onClick="departamento('La Unión es también uno de los departamentos con mayor extension territorial, ademas el que tiene un puerto con la más alta tecnologia. Posee una extension territorial de 2,074 Kilometros, 372,271 Habitantes y con una division de 18 municipios, divididos por dos distritos. Sus principales fuentes de ingresos son el turismo gracias a las elevaciones montañosas, y al Puerto de La Union.')"/></div>
+            </map>
+            </div>
+        <div class="codigoCorto">
+            <p id="descripcion"></p>
+            </div>
+</body>
+</html>

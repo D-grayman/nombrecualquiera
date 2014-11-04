@@ -1,0 +1,77 @@
+html {
+height: 100%;
+}
+
+body {
+    background-image: url("../imagen/white-paper-texture-hd.jpg")
+}
+
+
+#wrapper {
+margin:auto;
+max-width: 1120px;
+padding-left: 9%;
+padding-right: 2%;
+width: 98%;
+position: relative;
+}
+header h1 {
+text-align: center;
+margin: 12px auto;
+font-family: "LeagueGothicRegular",Verdana,Helvetica,"Liberation Sans";
+font-size: 3.8em;
+text-transform: uppercase;
+color: #707070;
+text-shadow: 5px 5px 0px #EEE, 7px 7px 0px #707070;
+}
+ul.grid li {
+display: inline-block;
+vertical-align: top;
+width: 168px;
+/* Para lograr el efecto del inline-block en navegadores IE 6 y 7 */
+*display: inline;
+*zoom: 1;
+}
+ul.grid li h4 {
+color:#4043F4;
+font: Bold 0.9em "LatoSemibold",Verdana,Helvetica,"Liberation Sans";
+text-align: center;
+}
+ul.grid li p {
+color: #393639;
+font: Normal 0.8em "LatoRegular",Verdana,Helvetica,"Liberation Sans";
+margin: 0 9px;
+text-align: left;
+}
+ul.grid li img.avatar {
+background: #F9FCF9;
+border: solid 1px #4043F4;
+margin: 5% 15%;
+padding: 10px;
+}
+ul.grid li img.avatar:hover {
+border: solid 1px #CCC;
+-moz-box-shadow: 1px 1px 5px #999;
+-webkit-box-shadow: 1px 1px 5px #999;
+box-shadow: 1px 1px 5px #999;
+
+}
+.box {
+    z-index: 1;
+width: 165px;
+height:300px;
+margin: 16px auto;
+background-color: #D7D6D7;
+border: 2px solid #999999;
+
+-moz-box-shadow: 0px 0px 2px #000000;
+-webkit-box-shadow: 0px 0px 2px #000000;
+box-shadow: 0px 0px 2px #000000;
+
+color: #000000;
+text-align: justify
+
+}
+
+    
+               
